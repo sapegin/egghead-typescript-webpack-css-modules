@@ -1,0 +1,53 @@
+{
+  "name": "typescript-webpack-css-modules",
+  "version": "1.0.0",
+  "private": true,
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "http://sapegin.me"
+  },
+  "homepage": "https://github.com/sapegin/typescript-webpack-css-modules",
+  "repository": "sapegin/typescript-webpack-css-modules",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "start": "webpack --watch",
+    "lint": "eslint . --cache --fix",
+    "pretest": "npm run lint",
+    "format": "prettier --write '**/*.{js,ts,md}'",
+    "posttest": "npm run format",
+    "precommit": "lint-staged"
+  },
+  "keywords": [],
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.28.8",
+    "eslint": "^4.15.0",
+    "eslint-config-tamia": "^5.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2",
+    "style-loader": "^0.19.1",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "typings-for-css-modules-loader": "^1.7.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  }
+}
