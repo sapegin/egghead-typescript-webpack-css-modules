@@ -18,6 +18,7 @@
   ],
   "scripts": {
     "start": "webpack --watch",
+    "start:bs": "browser-sync start --no-notify --server . --files '*.js'",
     "lint": "eslint . --cache --fix",
     "pretest": "npm run lint",
     "format": "prettier --write '**/*.{js,ts,md}'",
@@ -27,6 +28,7 @@
   "keywords": [],
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.23.5",
     "css-loader": "^0.28.8",
     "eslint": "^4.15.0",
     "eslint-config-tamia": "^5.0.0",
