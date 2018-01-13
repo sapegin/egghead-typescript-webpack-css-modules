@@ -1,8 +1,9 @@
-.button {
+.salmon-button {
 	padding: 0.5em 1em;
 	background: snow;
 	color: salmon;
 	border: 1px solid salmon;
 	border-radius: 3px;
-	font-size: 1.4em;
+	font-size: 1.6em;
+	font-weight: bold;
 }
