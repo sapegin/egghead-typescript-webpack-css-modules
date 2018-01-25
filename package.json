@@ -8,16 +8,13 @@
   },
   "homepage": "https://github.com/sapegin/typescript-webpack-css-modules",
   "repository": "sapegin/typescript-webpack-css-modules",
-  "license": "MIT",
+  "license": "CC0-1.0",
   "engines": {
     "node": ">=6.9"
   },
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "scripts": {
-    "start": "webpack --watch",
+    "start": "npm run start:wp & npm run start:bs",
+    "start:wp": "webpack --watch",
     "start:bs": "browser-sync start --no-notify --server . --files '*.js'",
     "lint": "eslint . --cache --fix",
     "pretest": "npm run lint",
